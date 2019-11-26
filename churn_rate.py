@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 dataset = pd.read_csv('churn_data.csv')
+"""
+Exploratory Data Analysis
+"""
 
 dataset.head()
 dataset.columns
