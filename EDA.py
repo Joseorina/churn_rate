@@ -78,3 +78,8 @@ corr = dataset.drop(columns = ['user', 'churn']).corr()
 # Generate a mask for upper triangle
 mask = np.zeros_like(corr, dtype=np.bool)
 mask[np.triu_indices_from(mask)] = True
+
+# Set up the atplotlib figure
+f, ax = plt.subplots(figsize = (15,15))
+
+# Generate a custom diverging colormap
