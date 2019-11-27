@@ -111,3 +111,7 @@ print(rfe.support_)
 X_train.columns[rfe.support_]
 
 # Fitting Model to the training set
+
+from sklearn.linear_model import LogisticRegression
+classifier = LogisticRegression(random_state=0)
+classifier.fit(X_train[X_train.columns[rfe.support_]], y_train)
