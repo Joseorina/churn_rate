@@ -101,4 +101,7 @@ pd.concat([pd.DataFrame(X_train.columns, columns = ["features"]),
 from sklearn.feature_selection import RFE
 from sklearn.linear_model import LogisticRegression
 
+# Model to test
+classifier = LogisticRegression()
+rfe = RFE(classifier, 20)
     
