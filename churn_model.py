@@ -45,3 +45,6 @@ new_indexes = np.concatenate((lower, higher))
 
 X_train = X_train.loc[new_indexes,]
 y_train = y_train[new_indexes]
+
+
+# Feature scaling
