@@ -24,3 +24,5 @@ X_train, X_test, y_train, y_test = train_test_split(dataset.drop(columns = 'chur
                                                     dataset['churn'],
                                                     test_size = 0.2,
                                                     random_state = 0)
+
+# Feature scaling and Balancing
