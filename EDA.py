@@ -75,3 +75,6 @@ sns.set(style = 'white')
 # Computing the correlation matrix
 corr = dataset.drop(columns = ['user', 'churn']).corr()
 
+# Generate a mask for upper triangle
+mask = np.zeros_like(corr, dtype=np.bool)
+mask[np.triu_indices_from(mask)] = True
