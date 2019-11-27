@@ -26,3 +26,14 @@ X_train, X_test, y_train, y_test = train_test_split(dataset.drop(columns = 'chur
                                                     random_state = 0)
 
 # Feature scaling and Balancing
+y_train.value_counts()
+
+pos_index = y_train[y_train == 1].index
+neg_index = y_train[y_train == 0].index
+
+if len(pos_index) > len(neg_index):
+    higher = pos_index
+    lower = neg_index
+else:
+    lower = pos_index
+    higher = neg_index
