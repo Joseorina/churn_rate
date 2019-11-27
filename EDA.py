@@ -54,3 +54,11 @@ for i in range(1, dataset2.shape[1] + 1):
     plt.pie(values, labels = index, autopct= '%1.1f%%')
     plt.axis('equal')
 plt.tight_layout(rect=[0,0.03,1,0.95])
+
+dataset[dataset2.waiting_4_loan == 1].churn.value_counts()
+dataset[dataset2.cancelled_loan == 1].churn.value_counts()
+dataset[dataset2.received_loan == 1].churn.value_counts()
+dataset[dataset2.rejected_loan == 1].churn.value_counts()
+dataset[dataset2.left_for_one_month == 1].churn.value_counts()
+
+## Exploring Uneven Features
