@@ -138,3 +138,7 @@ print("Test Data Accuracy: %0.4f" % accuracy_score(y_test, y_pred))
 pd.concat([pd.DataFrame(X_train.columns[rfe.support_], columns = ["features"]),
            pd.DataFrame(np.transpose(classifier.coef_), columns=["coef"])], axis = 1)
 
+# Formatting Final Results
+final_result = pd.concat([y_test, user_identifier], axis = 1).dropna()
+final_result['predicted_churn'] = y_pred
+final_results = final_result[['user', 'churn', 'predicted_churn']].reset_index(drop=True)
