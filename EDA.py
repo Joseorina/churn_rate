@@ -86,4 +86,4 @@ f, ax = plt.subplots(figsize = (15,15))
 cmap = sns.diverging_palette(220, 10, as_cmap=True)
 
 sns.heatmap(corr, mask=mask, cmap=cmap, vmax =.3, center=0,
-            square=True, linewidtchs=.5,cbar_kws={"Shrink": .5})
+            square=True, linewidths=.5,cbar_kws={"Shrink": .5})
