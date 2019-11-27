@@ -62,4 +62,7 @@ X_test = X_test2
 ### Model Building ###
 
 # Fitting model to the Training set
+from sklearn.linear_model import LogisticRegression
+classifier = LogisticRegression(random_state = 0)
+classifier.fit(X_train, y_train)
 
