@@ -60,3 +60,6 @@ X_train = X_train2
 X_test = X_test2
 
 ### Model Building ###
+
+# Fitting model to the Training set
+
