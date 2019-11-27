@@ -70,3 +70,9 @@ classifier.fit(X_train, y_train)
 y_pred = classifier.predict(X_test)
 
 # Evaluating Results
+from sklearn.metrics import confusion_matrix, accuracy_score, f1_score, precision_score, recall_score
+cm = confusion_matrix(y_test, y_pred)
+accuracy_score(y_test, y_pred)
+precision_score(y_test, y_pred)
+recall_score(y_test, y_pred)
+f1_score(y_test, y_pred)
