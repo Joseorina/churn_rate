@@ -32,3 +32,5 @@ for i in range(1, dataset2.shape[1] + 1):
     
     plt.hist(dataset2.iloc[:, i-1], bins=vals, color='blue')
 plt.tight_layout(rect=[0,0.03,1,0.95])
+
+## Piechart
