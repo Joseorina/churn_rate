@@ -135,6 +135,6 @@ sns.heatmap(df_cm, annot=True, fmt='g')
 print("Test Data Accuracy: %0.4f" % accuracy_score(y_test, y_pred))
 
 # Analysing coeficients
-pd.concat([pd.DataFrame(X_train.columns, columns = ["features"]),
+pd.concat([pd.DataFrame(X_train.columns[rfe.support_], columns = ["features"]),
            pd.DataFrame(np.transpose(classifier.coef_), columns=["coef"])], axis = 1)
 
