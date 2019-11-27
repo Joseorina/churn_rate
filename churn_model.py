@@ -82,3 +82,12 @@ plt.figure(figsize=(10,7))
 sns.set(font_scale=1.4)
 sns.heatmap(df_cm, annot=True, fmt='g')
 print("Test Data Accuracy: %0.4f" % accuracy_score(y_test, y_pred))
+
+# Applying k-fold cross validation
+from sklearn.model_selection import cross_val_score
+accuracies = cross_val_score(estimator = classifier,
+                             X= X_train,
+                             y = y_train,
+                             cv = 10)
+
+
