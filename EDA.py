@@ -70,3 +70,8 @@ dataset.drop(columns = ['churn', 'user', 'housing', 'payment_type',
 
 
 ## Correlation Matrix
+sns.set(style = 'white')
+
+# Computing the correlation matrix
+corr = dataset.drop(columns = ['user', 'churn']).corr()
+
