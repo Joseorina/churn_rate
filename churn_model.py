@@ -52,4 +52,9 @@ from sklearn.preprocessing import StandardScaler
 sc_X = StandardScaler()
 X_train2 = pd.DataFrame(sc_X.fit_transform(X_train))
 X_test2 = pd.DataFrame(sc_X.transform(X_test))
-
+X_train2.columns = X_train.columns.values
+X_test.columns = X_test.columns.values
+X_train2.index = X_train.index.values
+X_test.index = X_test.index.values
+X_train = X_train2
+X_test = X_test2
