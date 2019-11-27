@@ -19,3 +19,8 @@ dataset = dataset.drop(columns = ['housing_na','zodiac_sign_na', 'payment_type_n
 
 
 # Splitting the dataset ontp Traiing Set and Test set
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(dataset.drop(columns = 'churn'),
+                                                    dataset['churn'],
+                                                    test_size = 0.2,
+                                                    random_state = 0)
