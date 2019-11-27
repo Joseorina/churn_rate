@@ -10,3 +10,9 @@ dataset = pd.read_csv('new_churn_data.csv')
 ## Data preparation
 user_identifier = dataset['user']
 dataset = dataset.drop(columns = ['user'])
+
+# One-hot encoding
+dataset.housing.value_counts()
+dataset = pd.get_dummies(dataset)
+dataset.columns
+dataset = dataset.drop(columns = ['housing_na','zodiac_sign_na', 'payment_type_na'])
