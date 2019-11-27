@@ -115,3 +115,8 @@ X_train.columns[rfe.support_]
 from sklearn.linear_model import LogisticRegression
 classifier = LogisticRegression(random_state=0)
 classifier.fit(X_train[X_train.columns[rfe.support_]], y_train)
+
+# Predicting Test set
+y_pred = classifier.predict(X_test[X_test.columns[rfe.support_]])
+
+#Evaluating the results
