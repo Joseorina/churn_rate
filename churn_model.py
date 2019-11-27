@@ -9,3 +9,4 @@ dataset = pd.read_csv('new_churn_data.csv')
 
 ## Data preparation
 user_identifier = dataset['user']
+dataset = dataset.drop(columns = ['user'])
