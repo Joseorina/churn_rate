@@ -67,3 +67,6 @@ dataset.drop(columns = ['churn', 'user', 'housing', 'payment_type',
                          'zodiac_sign']).corrwith(dataset.churn).plot.bar(
     figsize = (20, 10), title = 'Correlation with the Response variable',
     fontsize = 15, rot=45, grid = True)
+
+
+## Correlation Matrix
