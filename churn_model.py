@@ -48,3 +48,8 @@ y_train = y_train[new_indexes]
 
 
 # Feature scaling
+from sklearn.preprocessing import StandardScaler
+sc_X = StandardScaler()
+X_train2 = pd.DataFrame(sc_X.fit_transform(X_train))
+X_test2 = pd.DataFrame(sc_X.transform(X_test))
+
