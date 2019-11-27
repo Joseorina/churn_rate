@@ -1,1 +1,7 @@
 ## Churn Model
+import pandas as pd
+import numpy as np
+import random
+import seaborn as sns
+import matplotlib.pyplot as plt
+
