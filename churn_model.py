@@ -5,3 +5,4 @@ import random
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+dataset = pd.read_csv('new_churn_data.csv')
