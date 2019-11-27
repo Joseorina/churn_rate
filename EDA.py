@@ -34,3 +34,9 @@ for i in range(1, dataset2.shape[1] + 1):
 plt.tight_layout(rect=[0,0.03,1,0.95])
 
 ## Piechart
+dataset2 = dataset[['housing', 'is_referred', 'app_downloaded',
+                    'web_user', 'app_web_user', 'ios_user',
+                    'android_user', 'registered_phones', 'payment_type',
+                    'waiting_4_loan','cancelled_loan','received_loan',
+                    'rejected_loan','zodiac_sign','left_for_two_month_plus',
+                    'left_for_one_month', 'is_referred']]
