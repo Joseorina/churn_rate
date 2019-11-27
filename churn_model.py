@@ -104,4 +104,8 @@ from sklearn.linear_model import LogisticRegression
 # Model to test
 classifier = LogisticRegression()
 rfe = RFE(classifier, 20)
-    
+rfe = rfe.fit(X_train, y_train)
+
+# Summary of selection of the attributes
+print(rfe.support_)
+X_train.columns[rfe.support_]
