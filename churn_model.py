@@ -119,4 +119,12 @@ classifier.fit(X_train[X_train.columns[rfe.support_]], y_train)
 # Predicting Test set
 y_pred = classifier.predict(X_test[X_test.columns[rfe.support_]])
 
-#Evaluating the results
+
+# Evaluating the results
+from sklearn.metrics import confusion_matrix, accuracy_score, f1_score, precision_score, recall_score
+cm = confusion_matrix(y_test, y_pred)
+accuracy_score(y_test, y_pred)
+precision_score(y_test, y_pred)
+recall_score(y_test, y_pred)
+f1_score(y_test, y_pred)
+
