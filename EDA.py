@@ -62,3 +62,5 @@ dataset[dataset2.rejected_loan == 1].churn.value_counts()
 dataset[dataset2.left_for_one_month == 1].churn.value_counts()
 
 ## Exploring Uneven Features
+# Correlation Plot
+
