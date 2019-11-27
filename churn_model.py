@@ -93,3 +93,12 @@ accuracies = cross_val_score(estimator = classifier,
 # Analysing coeeficients
 pd.concat([pd.DataFrame(X_train.columns, columns = ["features"]),
            pd.DataFrame(np.transpose(classifier.coef_), columns=["coef"])], axis = 1)
+
+    
+## Feature selection ###
+
+# Feature selection
+from sklearn.feature_selection import RFE
+from sklearn.linear_model import LogisticRegression
+
+    
