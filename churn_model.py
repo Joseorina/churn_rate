@@ -90,4 +90,6 @@ accuracies = cross_val_score(estimator = classifier,
                              y = y_train,
                              cv = 10)
 
-
+# Analysing coeeficients
+pd.concat([pd.DataFrame(X_train.columns, columns = ["features"]),
+           pd.DataFrame(np.transpose(classifier.coef_), columns=["coef"])], axis = 1)
