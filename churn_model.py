@@ -109,3 +109,5 @@ rfe = rfe.fit(X_train, y_train)
 # Summary of selection of the attributes
 print(rfe.support_)
 X_train.columns[rfe.support_]
+
+# Fitting Model to the training set
