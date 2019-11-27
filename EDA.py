@@ -83,3 +83,4 @@ mask[np.triu_indices_from(mask)] = True
 f, ax = plt.subplots(figsize = (15,15))
 
 # Generate a custom diverging colormap
+cmap = sns.diverging_palette(220, 10, as_cmap=True)
